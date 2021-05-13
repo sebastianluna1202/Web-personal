@@ -1,0 +1,160 @@
+:root {
+    --dark-blue: #282a44;
+    --ligth-blue: #6099bd;
+    --yellow: #eca82a;
+}
+@media screen and (max-width:1146px) {
+    .section-2 div p {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:1078px) {
+    .section-2 div p {
+        font-size: 20px;
+    }
+    .section-2 div h2 {
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .section-1 img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 50%;
+        transition: .2s;
+        clip-path: none;
+
+    }
+}
+
+@media screen and (max-width:870px) {
+    .section-1 {
+        padding-top: 90px;
+        flex-direction: column;
+    }
+    .section-1 div p:first-child {
+        position: absolute;
+        top: 120px;
+        right: 80px;
+    }
+    .section-1 div p:last-child {
+        text-align: center;
+    }
+    .section-2 {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .section-2 div {
+        width: 70%;
+        height: auto;
+        align-items: center;
+    }
+    .section-3 div {
+        width: 90vw;
+    }
+    .section-3 div img {
+        width: 150px;
+        height: 150px;
+    }
+    .section-3 div img:hover {
+        width: 190px;
+        height: 190px;
+    }
+    .section-2 div h2, .section-3 h2, .section-4 h2 {
+        text-align: center;
+    }    
+}
+
+@media screen and (max-width:767px) {
+    header nav div {
+        padding: 18px;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        z-index: 3;
+    }
+    header nav div span {
+        background-color: white;
+        height: 8px;
+    }
+    header nav ul a li{
+        font-weight: 600;
+    }
+    header nav ul a:hover > li {
+        transition: .3s;
+        padding-left: 30px ;
+    }
+    header nav ul {
+        background-color: #b0d3dd3a;
+        height: 100vh;
+        padding-top: 90px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 50vw;
+        display: inline;
+        overflow-x: hidden;
+    }
+    header nav ul {
+        left: 800px;
+    }
+    header nav div:hover + ul, header nav ul:hover {
+        transition: .3s;
+        transition-timing-function:ease-out;
+        left: 40vw;
+    }
+    .section-1 {
+        padding: 0px;
+    }
+    .section-1 div p:first-child {
+        display: none;
+    }
+    .section-1 div h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .section-1 img {
+        width: 300px;
+        height: 300px;
+    }
+    .section-2 div h2 {
+        font-size: 40px;
+    }
+    .section-3 h2 {
+        font-size: 40px;
+    }
+    .section-3 div img {
+        width: 120px;
+        height: 120px;
+    }
+    .section-3 div img:hover {
+        width: 160px;
+        height: 160px;
+    }
+    .section-4 h2 {
+        font-size: 40px
+    }
+    .section-4 div {
+        flex-direction: column-reverse;
+    }
+    .section-4 div img {
+        margin-top: 20px;
+        width: 70vw;
+    }
+    footer {
+        flex-direction: column-reverse;
+        padding-top: 100px;
+    }
+    footer img {
+        width: 250px;
+    }
+    footer ul li {
+        text-align: center;
+    }
+}
