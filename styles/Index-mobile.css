@@ -157,4 +157,39 @@
     footer ul li {
         text-align: center;
     }
+
+    @media screen and (max-width:375px) {
+        .section-1 img {
+            width: 250px;
+            height: 250px;
+        }
+        /* .section-2 {
+            height: auto;
+        } */
+        .section-2 div h2 {
+            font-size: 30px;
+        }
+        .section-2 div p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width:330px) {
+    .section-1 img {
+        width: 200px;
+        height: 200px;
+    }
+    .section-1 h1 {
+        font-size:  40px;
+    }
+    .section-2 div h2 {
+        font-size: 25px;
+    }
+    .section-2 div p {
+        font-size: 14px;
+    }
+    .section-3 h2, .section-4 h2 {
+        font-size: 25px;
+    }
 }
