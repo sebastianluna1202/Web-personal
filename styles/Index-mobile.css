@@ -1,8 +1,10 @@
 :root {
-    --dark-blue: #ffffff;
-    --ligth-blue: #4f7263;
-    --yellow: #f1acac;
+    --primary-color: #ffffff;
+    --seccondary-color: #4f7263;
+    --third-color: #be5261;
+    --dark-grey: #333344
 }
+/* #b44756 */
 @media screen and (max-width:1146px) {
     .section-2 div p {
         font-size: 24px;
@@ -81,7 +83,7 @@
         justify-content: space-between;
       }
       header .menu-icon span {
-        background-color: #333333;
+        background-color: var(--dark-grey);
         height: 17%;
         transition: 300ms;
       }
