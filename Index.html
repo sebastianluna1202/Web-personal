@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sebastián Luna</title>
+    <link rel="shortcut icon" href="./assets/icons/logotipo.svg" />
+    <meta name="author" content="Sebastián Luna Rodríguez">
+    <meta name="description" content="Soy sebastián Luna y tengo 20 años, estudio ingeniería en gestión empresarial y soy un apasionado por la tecnología, estudio desarrollo web y diseño en platzi.">
+    <meta name="keywords" content="desarrollo, frontend, diseño, web, figma, css, javascript, html, responsive, platzi, UI/UX">
     <link rel="stylesheet" href="./styles/Index-desktop.css">
     <link rel="stylesheet" href="./styles/Index-mobile.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="./assets/icons/Logotipo.png" alt="Logotipo" >
-        <nav>
-            <div>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul>
-                <a href="#section-2"><li>SOBRE MI</li></a>
-                <a href="#section-3"><li>TECNOLOGIAS</li></a>
-                <a href="#section-4"><li>PORTAFOLIO</li></a>
-                <a href="#footer"><li>CONTACTO</li></a>
+        <img src="./assets/icons/logotipo.svg" alt="Logotipo" >
+        <div class="menu-icon">
+            <span class="first-span"></span>
+            <span class="seccond-span"></span>
+            <span class="third-span"></span>
+        </div>
+        <nav class="nav hidden display-none">
+            <ul >
+                <li><a href="#section-2">SOBRE MI</a></li>
+                <li><a href="#section-3">TECNOLOGIAS</a></li>
+                <li><a href="#section-4">PORTAFOLIO</a></li>
+                <li><a href="#footer">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -39,32 +43,91 @@
         <div class="section-2" id="section-2">
             <div>
                 <h2>SOBRE MÍ</h2>
-                <p>SOY SEBASTIÁN LUNA, TENGO 19 AÑOS Y SOY ESTUDIANTE DE INGENIERÍA EN GESTIÓN EMPRESARIAL Y UN APASIONADO POR LA TENCOLOGÍA, ESTUDIO DESARROLLO WEB Y DISEÑO EN PLATZI</p>
+                <p>Soy sebastián Luna y tengo 20 años, estudio ingeniería en gestión empresarial y soy un apasionado por la tecnología, estudio desarrollo web y diseño en platzi.</p>
             </div>
-            <a href="#">MÁS SOBRE MÍ</a>
+            <a class="button" href="#">Más sobre mí</a>
         </div>
         <div class="section-3" id="section-3">
             <h2>TECNOLOGIAS</h2>
             <div>
-                <img class="contain" src="./assets/icons/tecnologias/1.png" alt="Logotipo de HTML">
-                <img class="contain" src="./assets/icons/tecnologias/2.png" alt="Logotipo de CSS">
-                <img class="radius" src="./assets/icons/tecnologias/3.png" alt="Logotipo de JavaScript">
-                <img src="./assets/icons/tecnologias/4.png" alt="Logotipo de Git">
-                <img class="radius" src="./assets/icons/tecnologias/5.png" alt="Logotipo de Adobe Photoshop">
-                <img class="radius" src="./assets/icons/tecnologias/6.png" alt="Logotipo de Adobe Illustrator">
-                <img src="./assets/icons/tecnologias/7.png" alt="Logotipo de Excel">
-                <img src="./assets/icons/tecnologias/8.png" alt="Logotipo de Github">
+                <div>
+                    <img class="contain" src="./assets/icons/tecnologias/1.png" alt="Logotipo de HTML">
+                    <p>HTML5</p>
+                </div>
+                <div>
+                    <img class="contain" src="./assets/icons/tecnologias/2.png" alt="Logotipo de CSS">
+                    <p>CSS3</p>
+                </div>
+                <div>
+                    <img class="radius" src="./assets/icons/tecnologias/3.png" alt="Logotipo de JavaScript">
+                    <p>Javascript</p>
+                </div>
+                <div>
+                    <img src="./assets/icons/tecnologias/4.png" alt="Logotipo de Git">
+                    <p>Git</p>
+                </div>
+                <div>
+                    <img src="./assets/icons/tecnologias/5.png" alt="Logotipo de Github">
+                    <p>Github</p>
+                </div>
+                <div>
+                    <img class="radius" src="./assets/icons/tecnologias/6.jpg" alt="Logotipo de Tailwind CSS">
+                    <p>Tailiwnd CSS</p>
+                </div>
+                <div>
+                    <img class="radius" src="./assets/icons/tecnologias/7.jpg" alt="Logotipo de Sass">
+                    <p>Sass</p>
+                </div>
+                <div>
+                    <img class="radius" src="./assets/icons/tecnologias/8.jpg" alt="Logotipo de Figma">
+                    <p>Figma</p>
+                </div>
+                <div>
+                    <img class="radius" src="./assets/icons/tecnologias/9.png" alt="Logotipo de Illustrator">
+                    <p>Illustrator</p>
+                </div>
+                <div>
+                    <img class="radius" src="./assets/icons/tecnologias/10.png" alt="Logotipo de Photoshop">
+                    <p>Photoshop</p>
+                </div>
             </div>
         </div>
         <div class="section-4" id="section-4">
             <h2>PORTAFOLIO</h2>
             <div>
                 <div class="description">
+                    <h3>ACTISIS</h3>
+                    <p>Rediseño de la página web de ACTISIS, empresa dedicada a la creación de soluciones tecnológicas integrales para tu propio emprendimiento, desarrollada con HTML, CSS y Javascript.</p>
+                    <div>
+                        <a href="https://sebastianluna1202.github.io/Actisis" target="_blank"><p class="button">Ir a la página</p></a>
+                        <a href="https://github.com/sebastianluna1202/Actisis" target="_blank"><img src="./assets/icons/tecnologias/5.png" alt="Logo de Github"></a>
+                        <a href="https://www.figma.com/file/SFqVuIL7IPZqoXlTxQI70E/ACTISIS" target="_blank"><img class="radius" src="./assets/icons/tecnologias/8.jpg" alt="Logo de Figma"></a>
+                    </div>
+                </div>
+                <img src="./assets/images/muck-up-actisis.jpg" alt="Muck-up del proyecto"> 
+            </div>
+            <div>
+                <div class="description">
+                    <h3>DEV-AI</h3>
+                    <p>Solución para la página web de una plataforma de educación en linea, diseñada en figma y desarrollada con el framework Tailwind CSS.</p>
+                    <div>
+                        <a href="https://sebastianluna1202.github.io/dev.ai/public/index.html" target="_blank"><p class="button">Ir a la página</p></a>
+                        <a href="https://github.com/sebastianluna1202/dev.ai" target="_blank"><img src="./assets/icons/tecnologias/5.png" alt="Logo de Github"></a>
+                        <a href="https://www.figma.com/file/Lrt0pI9OHj0djadCMruweF/DEV.AI" target="_blank"><img class="radius" src="./assets/icons/tecnologias/8.jpg" alt="Logo de Figma"></a>
+                    </div>
+                </div>
+                <img src="./assets/images/muck-up-dev-ai.jpg" alt="Muck-up del proyecto"> 
+            </div>
+            <div>
+                <div class="description">
                     <h3>MENÚ EN LINEA</h3>
                     <p>Proyecto personal, diseño de un prototipo de página web y su menú para un restaurante.</p>
-                    <a href="https://sebastianluna1202.github.io/Menu-en-linea/Index.html" target="_blank"><p>IR A LA PÁGINA</p></a>
+                    <div>
+                        <a href="https://sebastianluna1202.github.io/Menu-en-linea/Index.html" target="_blank"><p class="button">Ir a la página</p></a>
+                        <a href="https://github.com/sebastianluna1202/Menu-en-linea" target="_blank"><img src="./assets/icons/tecnologias/5.png" alt="Logo de Github"></a>
+                    </div>
                 </div>
-                <img src="./assets/images/muck-up.png" alt="Muck-up del proyecto"> 
+                <img src="./assets/images/muck-up-menu-en-linea.jpg" alt="Muck-up del proyecto"> 
             </div>
         </div>
     </main>
@@ -74,7 +137,8 @@
             <li><a href="https://github.com/sebastianluna1202" target="_blank">Github</a></li>
             <li><a href="https://platzi.com/p/sebasluna1202/" target="_blank">Platzi</a></li>
         </ul>
-        <img src="./assets/icons/Logotipo.png" alt="">
+        <img src="./assets/icons/logotipo.svg" alt="">
     </footer>
+    <script src="./js/desplegar_menu.js"></script>
 </body>
 </html>
